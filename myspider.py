@@ -75,7 +75,8 @@ class MySpider(CrawlSpider):
                     json.dump({'date': f'{date:%Y%m%d}', 
                                'category' : category,
                                'title' : title,
-                               'text': text}, outfile)
+                               'text': text,
+                               'source' : 'esgnews.it'}, outfile)
                 
             except:
                 pass#time.sleep(100)
